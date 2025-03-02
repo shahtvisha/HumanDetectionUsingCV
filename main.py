@@ -111,6 +111,7 @@ while cap.isOpened():
         cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
         cv2.putText(frame, f"ID {obj_id}", (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
     
+    # reduce the font
     # cv2.putText(frame, f"People Detected: {num_people}", (40, 80), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (255, 255, 255), 3)
     
     prev_gray = gray.copy()
